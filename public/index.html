@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Libro de cuentas</title>
+<link rel="stylesheet" href="css/styles.css"></head><body>
+<div id="login"><h1 style="color:var(--pri)">Libro de cuentas</h1><p style="color:var(--mute)">Ingresa para ver tu contabilidad.</p>
+<label>Usuario</label><input id="lu" autocomplete="username" autocapitalize="none" autocorrect="off" spellcheck="false"><label>Contraseña</label><input id="lp" type="password" autocomplete="current-password" autocapitalize="none">
+<div id="msg"></div><button class="go" id="lb">Entrar</button></div>
+<div id="app" hidden>
+<nav><h1>Libro de cuentas</h1><button data-v="dash">Balance</button><button data-v="sales">Ventas</button><button data-v="purchases">Compras</button><button data-v="movements">Movimientos</button><button data-v="debts">Cuentas</button><button data-v="dishes">Platos</button><button data-v="products">Insumos</button><button data-v="parties">Contactos</button><button data-v="tools">Respaldo</button><button id="out">Salir</button></nav>
+<main id="view"></main></div>
+<script src="js/state.js"></script>
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/views/dashboard.js"></script>
+<script src="js/views/lists.js"></script>
+<script src="js/views/sales.js"></script>
+<script src="js/views/purchases.js"></script>
+<script src="js/views/tools.js"></script>
+<script src="js/events.js"></script>
+<script src="js/app.js"></script></body></html>
